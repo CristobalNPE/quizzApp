@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap');
 
 :root {
-    --primary-color: black;
-    --secondary-color: red;
-    --primary-color-dim: gray;
-    --text-color: white;
+    --primary-color: #A5C9CA;
+    --secondary-color: #395B64;
 
-    --font-main: 'Karla', sans-serif;
+    --color-ok-100: #5fa86b;
+    --color-ok-1: #23ad3a;
+
+    --text-color-0: #E7F6F2;
+    --text-color-100: #2C3333;
+
+    --font-main: 'Quicksand', sans-serif;
 }
 
 *, *::before, *::after {
@@ -17,4 +21,57 @@
 
 body, button {
     font-family: var(--font-main);
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color-100);
+
+}
+
+.welcome__panel {
+    background-color: var(--secondary-color);
+    color: var(--text-color-0);
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    padding: 3em;
+    justify-content: center;
+    align-items: center;
+    margin: 25vh auto;
+    border-radius: 10px;
+    box-shadow: 1px 5px 16px 13px rgba(0, 0, 0, 0.09);
+
+}
+
+.welcome__title {
+    text-transform: uppercase;
+    font-weight:700;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+
+.welcome__sub {
+    font-weight: 200;
+    margin-block: 1em;
+}
+
+.btn {
+    padding: 1em 2em;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn__ok {
+    background-color: var(--color-ok-100);
+    transition: background-color .3s ease-in-out;
+    color: var(--text-color-0);
+}
+.btn__ok:hover{
+background-color: var(--color-ok-1);
 }
