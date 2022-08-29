@@ -1,4 +1,5 @@
 import React from 'react';
+import Pregunta from "./Pregunta.jsx";
 
 const Quiz = () => {
     return (
@@ -20,11 +21,11 @@ const Quiz = () => {
             </div>
             <div className="quiz__main">
                 <h1>Selecciona la opcion que creas es correcta:</h1>
-                Pregunta
-                Pregunta
-                Pregunta
-                Pregunta
-                Pregunta
+                <Pregunta/>
+                <Pregunta/>
+                <Pregunta/>
+                <Pregunta/>
+                <Pregunta/>
             </div>
         </section>
     );
