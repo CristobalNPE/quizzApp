@@ -1,6 +1,7 @@
 import React from 'react';
 import {CSSTransition} from "react-transition-group";
 import Welcome from "./components/Welcome.jsx";
+import Quiz from "./components/Quiz.jsx";
 
 const App = () => {
     const [isWelcome, setIsWelcome] = React.useState(true)
@@ -16,7 +17,7 @@ const App = () => {
                 <Welcome isWelcome={isWelcome} handleStartButton={handleStartButton}/>
             </CSSTransition>
 
-            <Quiz/>
+            {isWelcome || <Quiz/>}
 
         </main>
     );
