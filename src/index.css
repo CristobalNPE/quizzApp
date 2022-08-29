@@ -41,7 +41,10 @@ body {
     margin: 25vh auto;
     border-radius: 10px;
     box-shadow: 1px 5px 16px 13px rgba(0, 0, 0, 0.09);
-
+    transition: opacity .5s ease-in-out;
+}
+.hides{
+    opacity: 0;
 }
 
 .welcome__title {
@@ -74,4 +77,24 @@ body {
 }
 .btn__ok:hover{
 background-color: var(--color-ok-1);
+}
+
+
+
+
+
+
+.fadeout-enter {
+    opacity: 0;
+}
+.fadeout-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+.fadeout-exit {
+    opacity: 1;
+}
+.fadeout-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
 }
