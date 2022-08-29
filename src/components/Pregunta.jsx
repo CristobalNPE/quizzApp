@@ -11,13 +11,6 @@ const Pregunta = () => {
                 <button className="respuesta">Tiene 7 litros</button>
                 <button className="respuesta">Tiene 0,5 litros</button>
             </div>
-            <div className="pregunta__info">
-                <p>
-                    La cantidad de sangre varía de persona a persona. El volumen de sangre representa del 7 al 8% del
-                    peso corporal. De esta forma, en una persona adulta que pesa entre 50 y 80 kilogramos, puede haber
-                    entre 4 y 6 litros de sangre.
-                </p>
-            </div>
         </div>
     );
 };

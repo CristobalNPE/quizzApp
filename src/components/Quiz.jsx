@@ -22,10 +22,7 @@ const Quiz = () => {
             <div className="quiz__main">
                 <h1>Selecciona la opcion que creas es correcta:</h1>
                 <Pregunta/>
-                <Pregunta/>
-                <Pregunta/>
-                <Pregunta/>
-                <Pregunta/>
+
             </div>
         </section>
     );
